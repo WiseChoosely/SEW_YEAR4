@@ -1,8 +1,8 @@
 <template>
   <md-app
-    v-cloak
-    md-waterfall
-    md-mode="fixed"
+      v-cloak
+      md-waterfall
+      md-mode="fixed"
   >
     <md-app-toolbar class="md-primary md-dense">
       <div class="md-toolbar-section-start">
@@ -15,23 +15,30 @@
     </md-app-toolbar>
 
     <md-app-content>
-      <router-view />
+      <hallo />
+      <hallo />
+      <hallo />
+      <hallo />
     </md-app-content>
   </md-app>
 </template>
 
 <script>
+// 1. Importiere benötigte Komponenten
+import Hallo from './Hallo'
+
 export default {
-    name: 'App',
+  name: 'App',
 
-    components: {
-    },
+  components: {
+    Hallo,
+  },
 
-    methods: {
-        answer() {
-            return 42
-        },
+  methods: {
+    answer() {
+      return 42
     },
+  },
 }
 </script>
 
