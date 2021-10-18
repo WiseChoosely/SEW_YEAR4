@@ -1,17 +1,17 @@
 <template>
 <div>
-  <fakebook-login></fakebook-login>
+  <login title="Anmelden bei Fakebook" placeholderEmail="Email" placeholderPassword="Passwort"></login>
 </div>
 </template>
 
 <script>
-import FakebookLogin from './FakebookLogin.vue'
+import Login from './Login.vue'
 
 export default {
     name: 'App',
 
     components: {
-      FakebookLogin
+      Login
     }
 }
 
