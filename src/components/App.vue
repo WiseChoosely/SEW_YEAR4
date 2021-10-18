@@ -15,16 +15,22 @@
     </md-app-toolbar>
 
     <md-app-content>
-      <router-view />
+      <hallo-welt />
+      <hallo-welt />
+      <hallo-welt />
+      <hallo-welt 123="Gustav" />
     </md-app-content>
   </md-app>
 </template>
 
 <script>
+import HalloWelt from './HalloWelt.vue'
+
 export default {
     name: 'App',
 
     components: {
+      HalloWelt,
     },
 
     methods: {
