@@ -15,9 +15,9 @@
     </md-app-toolbar>
 
     <md-app-content>
-      <hallo />
-      <hallo />
-      <hallo />
+      <hallo name="Welt" />
+      <hallo name="4BI" />
+      <hallo name="HTL Rennweg" />
       <hallo />
     </md-app-content>
   </md-app>
