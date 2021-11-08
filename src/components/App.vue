@@ -1,37 +1,23 @@
 <template>
-  <md-app
-      v-cloak
-      md-waterfall
-      md-mode="fixed"
-  >
-    <md-app-toolbar class="md-primary md-dense">
-      <div class="md-toolbar-section-start">
-        <router-link to="/" class="md-title">{{ $t('title') }}</router-link>
-      </div>
+  <div class="md-layout md-alignment-left">
 
-      <div class="md-subheading md-toolbar-section-end">
-        <router-link to="/info" class="md-title">Info</router-link>
-      </div>
-    </md-app-toolbar>
+    <zaehler-button buttonText="Ich zähle und bin bei:"/>
+    <zaehler-button class="md-raised md-primary" buttonText="Ich zähle auch und bin bei:"/>
 
-    <md-app-content>
-      <hallo name="Welt" />
-      <hallo name="4BI" />
-      <hallo name="HTL Rennweg" />
-      <hallo />
-    </md-app-content>
-  </md-app>
+  </div>
 </template>
 
 <script>
 // 1. Importiere benötigte Komponenten
 import Hallo from './Hallo'
+import ZaehlerButton from './ZaehlerButton.vue'
 
 export default {
   name: 'App',
 
   components: {
     Hallo,
+    ZaehlerButton,
   },
 
   methods: {
