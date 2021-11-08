@@ -1,6 +1,6 @@
 <template>
-<div>
-  <login title="Anmelden bei Fakebook" placeholderEmail="Email" placeholderPassword="Passwort"></login>
+<div class="md-layout md-alignment-top-center">
+  <login class="md-layout-item md-size-50 " title="Anmelden bei Fakebook" placeholderEmail="Email" placeholderPassword="Passwort" buttonText="Anmelden"></login>
 </div>
 </template>
 
